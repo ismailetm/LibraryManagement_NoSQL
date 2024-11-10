@@ -1,32 +1,35 @@
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+  <%- include("./partials/head.ejs") %>
 
-<body>
-  <%- include("./partials/nav.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
 
-  <div class="details content">
-    <h1>Book Details:</h1>
-    <h2><%= book.title %></h2>
-    <div class="content">
-      <p><span>Author:</span><%= book.author.name %></p>
-      <p><span>ISBN:</span><%= book.isbn %></p>
-      <p><span>Genre:</span><%= book.genre %></p>
-      <p><span>Published Year:</span><%= book.publishedYear %></p>
-      <p><span>Copies Available:</span><%= book.availableCopies %></p>
+    <div class="details content">
+      <h1>Book Details:</h1>
+      <h2><%= book.title %></h2>
+      <div class="content">
+        <p><strong>Author:</strong> <%= book.author.name %></p>
+        <p><strong>ISBN:</strong> <%= book.isbn %></p>
+        <p><strong>Genre:</strong> <%= book.genre %></p>
+        <p><strong>Published Year:</strong> <%= book.publishedYear %></p>
+        <p><strong>Copies Available:</strong> <%= book.availableCopies %></p>
+      </div>
     </div>
-  </div>
 
+    <!-- Operation buttons -->
+    <div class="operation-btn">
+      <form action="/books/delete/<%= book._id %>" method="post">
+        <button type="submit" class="btn btn-danger">Remove Book</button>
+      </form>
+      <form action="/books/edit/<%= book._id %>" method="get">
+        <button type="submit" class="btn btn-primary">Edit Book</button>
+      </form>
+    </div>
 
- <div class="operation-btn">
-   <br>
-   <form action="/books/delete/<%= book._id %>" method="post">
-    <button type="submit" >Remove</button>
-  </form>
-   <form action="/books/edit/<%= book._id %>" method="get">
-    <button type="submit">Updates</button>
-  </form>
- </div>
+    <% if (book.pdfBook) { %>
+      <a href="/books/download/<%= book._id %>" class="btn btn-success">Download PDF</a>
+    <% } %>
 
-  <%- include("./partials/footer.ejs") %>
-</body>
+    <%- include("./partials/footer.ejs") %>
+  </body>
 </html>

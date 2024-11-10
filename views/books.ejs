@@ -1,24 +1,24 @@
-<html lang="en">
 <%- include("./partials/head.ejs") %>
 
 <body>
   <%- include("./partials/nav.ejs") %>
 
-  <div class="blogs content">
-    <h2>All Books</h2>
-
-    <% if (books.length > 0) { %>
+  <div class="books-list">
+    <h1>All Books</h1>
+    <ul>
       <% books.forEach(book => { %>
-        <a class="single" href="/books/<%= book._id %>">
-          <h3 class="title"><%= book.title %></h3>
-          <p class="snippet"><%= book.genre%></p>
-          <p class="snippet"><%= book.author.name%></p>
-        </a>
+        <li>
+          <h3><%= book.title %> by <%= book.author %></h3>
+          <p>ISBN: <%= book.isbn %></p>
+          <p>Genre: <%= book.genre %></p>
+          <p>Published Year: <%= book.publishedYear %></p>
+          <p>Copies: <%= book.copies %></p>
+          <% if (book.pdfBook) { %>
+            <a href="/books/download/<%= book._id %>">Download PDF</a>
+          <% } %>
+        </li>
       <% }) %>
-    <% } else { %>
-      <p>There are no books to display...</p>
-    <% } %>
-    
+    </ul>
   </div>
 
   <%- include("./partials/footer.ejs") %>

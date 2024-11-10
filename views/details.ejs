@@ -5,26 +5,33 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="details content">
-    <h1>Profile:</h1>
-    <h2><%= user.name%></h2>
-    <div class="content">
-      <p><span>Email:</span><%= user.email %></p>
-      <p><span>Password:</span><%= user.password %></p>
-      <p><span>Address:</span><%= user.address %></p>
-      <p><span>Number:</span><%= user.number %></p>
+    <h1>User Profile</h1>
+    <h2><%= user.name %></h2>
+
+    <div class="user-info">
+      <p><strong>Email:</strong> <%= user.email %></p>
+      <p><strong>Password:</strong> <%= user.password %></p>
+      <p><strong>Address:</strong> <%= user.address %></p>
+      <p><strong>Phone Number:</strong> <%= user.number %></p>
     </div>
+
+    <!-- Bouton de téléchargement PDF si un fichier PDF est associé -->
+    <% if (user.pdfFilename) { %>
+      <div class="pdf-download">
+        <a href="/files/<%= user.pdfFilename %>" class="btn btn-download" target="_blank">Download PDF</a>
+      </div>
+    <% } %>
   </div>
 
+  <div class="operation-btn">
+    <form action="/users/<%= user.name %>" method="post">
+      <button type="submit" class="btn btn-danger">Remove User</button>
+    </form>
 
- <div class="operation-btn">
-   <br>
-   <form action="/users/<%= user.name %>" method="post">
-    <button type="submit" >Remove</button>
-  </form>
-   <form action="/edit/<%= user.name %>/<%= action %>" method="edit">
-    <button type="submit">Updates</button>
-  </form>
- </div>
+    <form action="/edit/<%= user.name %>/<%= action %>" method="get">
+      <button type="submit" class="btn btn-primary">Edit User</button>
+    </form>
+  </div>
 
   <%- include("./partials/footer.ejs") %>
 </body>
