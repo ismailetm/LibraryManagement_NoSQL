@@ -135,6 +135,17 @@ app.get('/books/download/:id', (req, res) => {
     });
 });
 
+app.post('/books/delete/:id', (req, res) => {
+  const id = req.params.id;
+  Book.findByIdAndDelete(id)
+    .then(result => {
+      res.redirect('/books');
+    })
+    .catch(err => {
+      console.log(err);
+    });
+});
+
 // Page 404
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Not Found' });
