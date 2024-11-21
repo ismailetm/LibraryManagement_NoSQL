@@ -182,9 +182,42 @@ app.post('/books/create', upload.single('pdfFile'), async (req, res) => {
 app.get('/books/:id', (req, res) => {
   const id = req.params.id;
   Book.findById(id)
-    .then(result => res.render('detailsBook', { book: result, title: 'Book Details' }))
-    .catch(err => res.status(404).render('404', { title: 'Book Not Found' }));
+    .then(result => {
+      res.render('detailsBook', { book: result, title: 'Book Details' });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(404).render('404', { title: 'Book Not Found' });
+    });
 });
+app.get('/books/edit/:id', (req, res) => {
+  const id = req.params.id;
+  console.log("Request made on " + req.url);
+  
+  // Trouver le livre par ID
+  Book.findById(id)
+    .then(result => {
+      res.render('editBook', { book: result, title: 'Edit Book' });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(404).render('404', { title: 'Book Not Found' });
+    });
+});
+
+app.post('/books/edit/:id',(req,res)=>{
+  console.log("POST req made on"+req.url);
+  Book.updateOne({_id:req.params.id},req.body) //then updating that user whose id is get from url 
+                                               //first passing id which user is to be updated than passing update info
+    .then(result => {
+      res.redirect(`/books/${req.params.id}`);//is success save this will redirect to home page
+      console.log("Users profile Updated");
+    })
+    .catch(err => { //if data not saved error showed
+      console.log(err);
+      res.status(500).send("Error updating book");
+    });
+})
 
 // Télécharger un fichier PDF depuis GridFS
 app.get('/books/download/:id', (req, res) => {
