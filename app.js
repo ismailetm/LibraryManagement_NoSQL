@@ -92,37 +92,56 @@ app.get('/edit/:name/:action',(req,res)=>{
 })
 
 
-//submitting data routes
-app.post('/user/create',(req,res)=>{
-  console.log("POST req made on"+req.url);
+// Route pour créer un utilisateur
+app.post('/user/create', (req, res) => {
+  console.log("POST req made on " + req.url);
   console.log("Form submitted to server");
-  /*Note: when you are passing form obj directly to collection using model you
-          have to give same name in form of that data that is to be passed in database 
-          and that name is declared inside schema*/
-  const user = new User(req.body); //passing object of form data directly to collection
-  user.save() //then saving this to database and this return promise
-    .then(result => {
-      res.redirect('/users');//is success save this will redirect to home page
-    })
-    .catch(err => { //if data not saved error showed
-      console.log(err);
-    });
-})
 
+  // Nettoyer les données : supprimer les champs vides ou non définis
+  const userData = {};
+  for (const key in req.body) {
+    if (req.body[key]) { // Vérifie que la valeur n'est ni vide ni undefined
+      userData[key] = req.body[key];
+    }
+  }
 
-//route for updating users data
-app.post('/edit/:id',(req,res)=>{
-  console.log("POST req made on"+req.url);
-  User.updateOne({_id:req.params.id},req.body) //then updating that user whose id is get from url 
-                                               //first passing id which user is to be updated than passing update info
+  // Créer un nouvel utilisateur avec les données nettoyées
+  const user = new User(userData);
+
+  user.save() // Enregistrer l'utilisateur dans la base de données
     .then(result => {
-      res.redirect('/users');//is success save this will redirect to home page
-      console.log("Users profile Updated");
+      res.redirect('/users'); // Si réussi, rediriger vers la liste des utilisateurs
     })
-    .catch(err => { //if data not saved error showed
-      console.log(err);
+    .catch(err => {
+      console.log(err); // Si une erreur se produit, afficher l'erreur dans la console
     });
-})
+});
+
+// Route pour mettre à jour les données d'un utilisateur
+app.post('/edit/:id', (req, res) => {
+  console.log("POST req made on " + req.url);
+
+  // Nettoyer les données soumises par le formulaire : supprimer les champs vides ou non définis
+  const updatedData = {};
+  for (const key in req.body) {
+    if (req.body[key]) { // Vérifie que la valeur n'est ni vide ni undefined
+      updatedData[key] = req.body[key];
+    }
+  }
+
+  // Mettre à jour l'utilisateur dans la base de données
+  User.updateOne({ _id: req.params.id }, updatedData)
+    .then(result => {
+      if (result.matchedCount === 0) {
+        return res.status(404).send("User not found");
+      }
+      res.redirect('/users'); // Si la mise à jour est réussie, rediriger vers la liste des utilisateurs
+      console.log("User profile updated");
+    })
+    .catch(err => {
+      console.log(err); // Si une erreur se produit, afficher l'erreur dans la console
+    });
+});
 
 //routes for deleting users by getting users name from url then finding that  users then doing delete
 app.post('/users/:name',(req,res)=>{ //form action of details.ejs pass name of user that later is assume as name
