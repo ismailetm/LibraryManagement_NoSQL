@@ -191,34 +191,61 @@ app.get('/books/:id', (req, res) => {
       res.status(404).render('404', { title: 'Book Not Found' });
     });
 });
+
+// Route pour afficher le formulaire d'édition d'un livre
 app.get('/books/edit/:id', (req, res) => {
   const id = req.params.id;
   console.log("Request made on " + req.url);
-  
+
   // Trouver le livre par ID
   Book.findById(id)
     .then(result => {
-      res.render('editBook', { book: result, title: 'Edit Book' });
+      if (!result) {
+        return res.status(404).render('404', { title: 'Book Not Found' });
+      }
+
+      // Nettoyer les données pour exclure les champs vides ou nuls
+      const cleanedBook = {};
+      for (const key in result.toObject()) {
+        if (result[key] !== "" && result[key] !== null && result[key] !== undefined) {
+          cleanedBook[key] = result[key];
+        }
+      }
+
+      res.render('editBook', { book: cleanedBook, title: 'Edit Book' });
     })
     .catch(err => {
-      console.log(err);
-      res.status(404).render('404', { title: 'Book Not Found' });
+      console.error(err);
+      res.status(500).render('404', { title: 'Book Not Found' });
     });
 });
 
-app.post('/books/edit/:id',(req,res)=>{
-  console.log("POST req made on"+req.url);
-  Book.updateOne({_id:req.params.id},req.body) //then updating that user whose id is get from url 
-                                               //first passing id which user is to be updated than passing update info
+// Route pour soumettre les modifications du livre
+app.post('/books/edit/:id', (req, res) => {
+  console.log("POST request made on " + req.url);
+
+  // Nettoyer les données soumises par le formulaire
+  const updatedData = {};
+  for (const key in req.body) {
+    if (req.body[key] !== "" && req.body[key] !== null && req.body[key] !== undefined) {
+      updatedData[key] = req.body[key];
+    }
+  }
+
+  // Mettre à jour le livre dans la base de données
+  Book.updateOne({ _id: req.params.id }, updatedData)
     .then(result => {
-      res.redirect(`/books/${req.params.id}`);//is success save this will redirect to home page
-      console.log("Users profile Updated");
+      if (result.matchedCount === 0) {
+        return res.status(404).send("Book not found");
+      }
+      res.redirect(`/books/${req.params.id}`); // Rediriger vers la page des détails du livre
+      console.log("Book profile updated");
     })
-    .catch(err => { //if data not saved error showed
-      console.log(err);
+    .catch(err => {
+      console.error(err);
       res.status(500).send("Error updating book");
     });
-})
+});
 
 // Télécharger un fichier PDF depuis GridFS
 app.get('/books/download/:id', (req, res) => {

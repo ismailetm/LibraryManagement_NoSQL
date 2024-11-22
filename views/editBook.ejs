@@ -18,15 +18,13 @@
       <input type="text" value="<%= book.isbn %>" id="isbn" name="isbn">
       
       <label for="genre">Genre:</label>
-      <label for="genre">Genre:</label>
-<select id="genre" name="genre" required>
-  <option value="Fiction" <%= book.genre === "Fiction" ? "selected" : "" %>>Fiction</option>
-  <option value="Non-Fiction" <%= book.genre === "Non-Fiction" ? "selected" : "" %>>Non-Fiction</option>
-  <option value="Science" <%= book.genre === "Science" ? "selected" : "" %>>Science</option>
-  <option value="Fantasy" <%= book.genre === "Fantasy" ? "selected" : "" %>>Fantasy</option>
-</select>
+      <select id="genre" name="genre" required>
+        <option value="Fiction" <%= book.genre === "Fiction" ? "selected" : "" %>>Fiction</option>
+        <option value="Non-Fiction" <%= book.genre === "Non-Fiction" ? "selected" : "" %>>Non-Fiction</option>
+        <option value="Science" <%= book.genre === "Science" ? "selected" : "" %>>Science</option>
+        <option value="Fantasy" <%= book.genre === "Fantasy" ? "selected" : "" %>>Fantasy</option>
+      </select>      
 
-      
       <label for="publishedYear">Published Year:</label>
       <input type="number" value="<%= book.publishedYear %>" id="publishedYear" name="publishedYear">
       
