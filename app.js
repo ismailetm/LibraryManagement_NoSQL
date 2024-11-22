@@ -355,10 +355,30 @@ app.get('/books', async (req, res) => {
     res.status(500).send('Erreur interne');
   }
 });
+/** 
+async function importManuscripts() {
+  try {
+    // Transformer les données
+    const data = JSON.parse(fs.readFileSync('./data/corpus_sans_arabe.json', 'utf8'));
+    const manuscripts = Object.entries(data).map(([url, details]) => ({
+      url,
+      ...details
+    }));
 
+    // Insérer dans la base MongoDB
+    const result = await Book.insertMany(manuscripts);
+    console.log(`${result.length} manuscrits ont été importés avec succès !`);
+  } catch (error) {
+    console.error('Erreur lors de l\'importation :', error);
+  } finally {
+    mongoose.connection.close();
+  }
+}
 
+// Exécuter l'importation
+importManuscripts();
 
-
+*/
 
 // Page 404
 app.use((req, res) => {
