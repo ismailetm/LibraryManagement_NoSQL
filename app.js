@@ -272,8 +272,22 @@ app.post('/books/delete/:id', (req, res) => {
     });
 });
 
+// new edit
+app.post('/books/:id/review', async (req, res) => {
+  const { user, comment, rating } = req.body;
 
-
+  try {
+    const book = await Book.findByIdAndUpdate(
+      req.params.id,
+      { $push: { reviews: { user, comment, rating } } }, // Ajout de l'avis
+      { new: true } // Retourne le document mis à jour
+    );
+    res.redirect(`/books/${req.params.id}`);
+  } catch (err) {
+    console.error('Erreur lors de l\'ajout de l\'avis:', err);
+    res.status(500).send('Erreur interne');
+  }
+});
 
 // Page 404
 app.use((req, res) => {

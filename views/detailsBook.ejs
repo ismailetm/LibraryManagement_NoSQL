@@ -30,6 +30,38 @@
       <a href="/books/download/<%= book._id %>" class="btn btn-success">Download PDF</a>
     <% } %>
 
+    <!-- new edit -->
+    <h3>Leave a Review</h3>
+<form action="/books/<%= book._id %>/review" method="POST">
+  <input type="text" name="user" placeholder="Your Name" required />
+  <textarea name="comment" placeholder="Write your review here..." ></textarea>
+  <select name="rating" required>
+    <option value="1">1 - Poor</option>
+    <option value="2">2 - Fair</option>
+    <option value="3">3 - Good</option>
+    <option value="4">4 - Very Good</option>
+    <option value="5">5 - Excellent</option>
+  </select>
+  <button type="submit">Submit Review</button>
+</form>
+    
+  <!-- // New edit -->
+  <h3>Reviews</h3>
+<% if (book.reviews && book.reviews.length > 0) { %>
+  <ul>
+    <% book.reviews.forEach(review => { %>
+      <li>
+        <p><strong><%= review.user %>:</strong> <%= review.comment %> (<%= review.rating %>/5)</p>
+      </li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No reviews yet. Be the first to review this book!</p>
+<% } %>
+
+
+
+
     <%- include("./partials/footer.ejs") %>
   </body>
 </html>
