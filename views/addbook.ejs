@@ -17,7 +17,14 @@
       <input type="text" id="isbn" name="isbn">
     
       <label for="genre">Genre:</label>
-      <input type="text" id="genre" name="genre">
+<select id="genre" name="genre" required>
+  <option value="Fiction">Fiction</option>
+  <option value="Non-Fiction">Non-Fiction</option>
+  <option value="Science">Science</option>
+  <option value="Fantasy">Fantasy</option>
+</select>
+
+
     
       <label for="publishedYear">Published Year:</label>
       <input type="number" id="publishedYear" name="publishedYear">
