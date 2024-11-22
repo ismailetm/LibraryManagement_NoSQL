@@ -138,11 +138,12 @@ app.post('/users/:name',(req,res)=>{ //form action of details.ejs pass name of u
 })
 
 // Afficher tous les livres
-app.get('/books', (req, res) => {
+/**app.get('/books', (req, res) => {
   Book.find().sort({ createdAt: -1 })
     .then(result => res.render('books', { books: result, title: 'All Books' }))
     .catch(err => console.log(err));
 });
+*/
 
 // Formulaire pour ajouter un livre
 app.get('/books/create', (req, res) => {
@@ -314,6 +315,40 @@ app.get('/books/:id/rating', async (req, res) => {
     res.status(500).json({ error: "Erreur interne" });
   }
 });
+
+app.get('/books', async (req, res) => {
+  const { keyword = '', genre = '', sort = '' } = req.query; // Assurez des valeurs par défaut
+
+  // Construire le filtre de recherche
+  let filter = {};
+  if (keyword) {
+    filter.$or = [
+      { title: { $regex: keyword, $options: 'i' } },
+      { author: { $regex: keyword, $options: 'i' } }
+    ];
+  }
+  if (genre) {
+    filter.genre = genre;
+  }
+
+  // Déterminer l'ordre de tri
+  let sortOption = {};
+  if (sort === 'year_asc') {
+    sortOption.publishedYear = 1;
+  } else if (sort === 'year_desc') {
+    sortOption.publishedYear = -1;
+  }
+
+  try {
+    const books = await Book.find(filter).sort(sortOption);
+    res.render('books', { books, title: 'Filtered Books', keyword, genre, sort });
+  } catch (err) {
+    console.error('Erreur lors du filtrage/tri des livres:', err);
+    res.status(500).send('Erreur interne');
+  }
+});
+
+
 
 
 

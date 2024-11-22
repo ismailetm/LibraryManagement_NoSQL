@@ -7,6 +7,33 @@
   <div class="blogs content">
     <h2>All Books</h2>
 
+    <!-- Formulaire de filtrage et de tri -->
+    <form action="/books" method="get" class="filter-form">
+      <input 
+        type="text" 
+        name="keyword" 
+        placeholder="Search by title or author..." 
+        value="<%= keyword || '' %>"
+      >
+      
+      <select name="genre">
+        <option value="">All Genres</option>
+        <option value="Fiction" <%= genre === 'Fiction' ? 'selected' : '' %>>Fiction</option>
+        <option value="Non-Fiction" <%= genre === 'Non-Fiction' ? 'selected' : '' %>>Non-Fiction</option>
+        <option value="Science" <%= genre === 'Science' ? 'selected' : '' %>>Science</option>
+        <option value="Fantasy" <%= genre === 'Fantasy' ? 'selected' : '' %>>Fantasy</option>
+        <!-- Ajoutez plus de genres si nécessaire -->
+      </select>
+
+      <select name="sort">
+        <option value="">Sort by</option>
+        <option value="year_asc" <%= sort === 'year_asc' ? 'selected' : '' %>>Year (Ascending)</option>
+        <option value="year_desc" <%= sort === 'year_desc' ? 'selected' : '' %>>Year (Descending)</option>
+      </select>
+
+      <button type="submit">Apply</button>
+    </form>
+
     <% if (books.length > 0) { %>
       <% books.forEach(book => { %> <!-- Correction de la syntaxe de la fonction fléchée -->
         <a class="single" href="/books/<%= book._id %>">
