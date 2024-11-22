@@ -289,6 +289,34 @@ app.post('/books/:id/review', async (req, res) => {
   }
 });
 
+app.get('/books/:id/rating', async (req, res) => {
+  const bookId = req.params.id;
+
+  try {
+    // Calcul de la moyenne des reviews
+    const book = await Book.aggregate([
+      { $match: { _id: mongoose.Types.ObjectId(bookId) } }, // Filtrer par ID du livre
+      { $unwind: "$reviews" }, // Diviser le tableau de reviews en documents individuels
+      {
+        $group: {
+          _id: "$_id",
+          averageRating: { $avg: "$reviews.rating" } // Calculer la moyenne des notes
+        }
+      }
+    ]);
+
+    // Vérifier si le livre a des reviews
+    const averageRating = book.length > 0 ? book[0].averageRating : null;
+
+    res.json({ averageRating: averageRating ? averageRating.toFixed(2) : "No reviews yet" }); // Retourner la moyenne
+  } catch (err) {
+    console.error('Erreur lors du calcul de la moyenne:', err);
+    res.status(500).json({ error: "Erreur interne" });
+  }
+});
+
+
+
 // Page 404
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Not Found' });

@@ -13,6 +13,8 @@
         <p><strong>Genre:</strong> <%= book.genre %></p>
         <p><strong>Published Year:</strong> <%= book.publishedYear %></p>
         <p><strong>Available Copies:</strong> <%= book.availableCopies %></p>
+        <p><strong>Reviews count:</strong> <%= book.reviews ? book.reviews.length : 0 %> Reviews</p>
+        <p><strong>Reviews average:</strong> <%= (book.reviews.reduce((sum, review) => sum + review.rating, 0) / book.reviews.length).toFixed(2) %> / 5</p>
       </div>
     </div>
 
@@ -31,34 +33,37 @@
     <% } %>
 
     <!-- new edit -->
-    <h3>Leave a Review</h3>
-<form action="/books/<%= book._id %>/review" method="POST">
-  <input type="text" name="user" placeholder="Your Name" required />
-  <textarea name="comment" placeholder="Write your review here..." ></textarea>
-  <select name="rating" required>
-    <option value="1">1 - Poor</option>
-    <option value="2">2 - Fair</option>
-    <option value="3">3 - Good</option>
-    <option value="4">4 - Very Good</option>
-    <option value="5">5 - Excellent</option>
-  </select>
-  <button type="submit">Submit Review</button>
-</form>
+<div>    
+    <h1>Leave a Review</h1>
+  <form action="/books/<%= book._id %>/review" method="POST">
+    <input type="text" name="user" placeholder="Your Name" required />
+    <textarea name="comment" placeholder="Write your review here..." ></textarea>
+    <select name="rating" required>
+      <option value="1">1 - Poor</option>
+      <option value="2">2 - Fair</option>
+      <option value="3">3 - Good</option>
+      <option value="4">4 - Very Good</option>
+      <option value="5">5 - Excellent</option>
+    </select>
+    <button type="submit">Submit Review</button>
+  </form>
+</div> 
     
   <!-- // New edit -->
-  <h3>Reviews</h3>
-<% if (book.reviews && book.reviews.length > 0) { %>
-  <ul>
-    <% book.reviews.forEach(review => { %>
-      <li>
-        <p><strong><%= review.user %>:</strong> <%= review.comment %> (<%= review.rating %>/5)</p>
-      </li>
-    <% }) %>
-  </ul>
-<% } else { %>
-  <p>No reviews yet. Be the first to review this book!</p>
-<% } %>
-
+<div>
+  <h1>Reviews</h1>
+  <% if (book.reviews && book.reviews.length > 0) { %>
+    <ul>
+      <% book.reviews.forEach(review => { %>
+        <li>
+          <p><strong><%= review.user %>:</strong> <%= review.comment %> (<%= review.rating %>/5)</p>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No reviews yet. Be the first to review this book!</p>
+  <% } %>
+</div>
 
 
 
