@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 // Afficher tous les livres
 app.get('/books', (req, res) => {
   Book.find().sort({ createdAt: -1 })
-    .then(result => res.render('books', { books: result, title: 'All Books' }))
+    .then(result => res.render('books', { books: result, Title: 'All Books' }))
     .catch(err => console.log(err));
 });
 
@@ -156,3 +156,27 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
+async function importManuscripts() {
+  try {
+    // Transformer les données
+    const data = JSON.parse(fs.readFileSync('./data/corpus_sans_arabe.json', 'utf8'));
+    const manuscripts = Object.entries(data).map(([url, details]) => ({
+      url,
+      ...details
+    }));
+
+    // Insérer dans la base MongoDB
+    const result = await Book.insertMany(manuscripts);
+    console.log(`${result.length} manuscrits ont été importés avec succès !`);
+  } catch (error) {
+    console.error('Erreur lors de l\'importation :', error);
+  } finally {
+    mongoose.connection.close();
+  }
+}
+
+// Exécuter l'importation
+importManuscripts();
+
