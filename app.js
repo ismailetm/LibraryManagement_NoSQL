@@ -275,14 +275,22 @@ app.post('/books/delete/:id', (req, res) => {
 
 // new edit
 app.post('/books/:id/review', async (req, res) => {
-  const { user, comment, rating } = req.body;
+  const { email, password, comment, rating } = req.body;
 
   try {
+    // Vérifier l'utilisateur dans la base de données
+    const user = await User.findOne({ email, password });
+    if (!user) {
+      return res.status(401).send('Invalid email or password');
+    }
+
+    // Ajouter l'avis au livre
     const book = await Book.findByIdAndUpdate(
       req.params.id,
-      { $push: { reviews: { user, comment, rating } } }, // Ajout de l'avis
-      { new: true } // Retourne le document mis à jour
+      { $push: { reviews: { user: email, comment, rating } } }, // Utiliser l'email comme identifiant utilisateur
+      { new: true }
     );
+
     res.redirect(`/books/${req.params.id}`);
   } catch (err) {
     console.error('Erreur lors de l\'ajout de l\'avis:', err);

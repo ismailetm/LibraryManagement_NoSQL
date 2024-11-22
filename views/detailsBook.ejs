@@ -33,21 +33,23 @@
     <% } %>
 
     <!-- new edit -->
-<div>    
-    <h1>Leave a Review</h1>
-  <form action="/books/<%= book._id %>/review" method="POST">
-    <input type="text" name="user" placeholder="Your Name" required />
-    <textarea name="comment" placeholder="Write your review here..." ></textarea>
-    <select name="rating" required>
-      <option value="1">1 - Poor</option>
-      <option value="2">2 - Fair</option>
-      <option value="3">3 - Good</option>
-      <option value="4">4 - Very Good</option>
-      <option value="5">5 - Excellent</option>
-    </select>
-    <button type="submit">Submit Review</button>
-  </form>
-</div> 
+    <div>
+      <h1>Leave a Review</h1>
+      <form action="/books/<%= book._id %>/review" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="password" name="password" placeholder="Your Password" required />
+        <textarea name="comment" placeholder="Write your review here..."></textarea>
+        <select name="rating" required>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+    
     
   <!-- // New edit -->
 <div>
