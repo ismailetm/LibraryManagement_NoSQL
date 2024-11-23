@@ -1,78 +1,192 @@
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+  <%- include("./partials/head.ejs") %>
 
-<body>
+<head>
   <%- include("./partials/nav.ejs") %>
+
+  <title>Aggregations Dashboard</title>
+  <style>
+    
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    strong {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
   <div class="content">
     <h1>Aggregations Dashboard</h1>
 
     <!-- Classement des auteurs -->
-    <h2>Top Authors by Number of Books</h2>
-    <ul>
-      <% authorsRanking.forEach(author => { %>
-        <li><%= author._id %>: <%= author.totalBooks %> books</li>
-      <% }) %>
-    </ul>
+    <section class="section authors-ranking">
+      <h2>Top Authors by Number of Books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Total Books</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% authorsRanking.forEach(author => { %>
+            <tr>
+              <td><%= author._id %></td>
+              <td><%= author.totalBooks %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </section>
 
     <!-- Livres les mieux notés -->
-    <h2>Top Rated Books</h2>
-    <ul>
-      <% topRatedBooks.forEach(book => { %>
-        <li>
-          <strong><%= book._id %></strong>: 
-          Avg Rating: <%= book.avgRating.toFixed(2) %>, 
-          Reviews: <%= book.totalReviews %>
-        </li>
-      <% }) %>
-    </ul>
+    <section class="section top-rated-books">
+      <h2>Top Rated Books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Average Rating</th>
+            <th>Total Reviews</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% topRatedBooks.forEach(book => { %>
+            <tr>
+              <td><strong><%= book._id %></strong></td>
+              <td><%= book.avgRating.toFixed(2) %></td>
+              <td><%= book.totalReviews %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </section>
 
     <!-- Genres les plus populaires -->
-    <h2>Most Popular Genres</h2>
-    <ul>
-      <% popularGenres.forEach(genre => { %>
-        <li><%= genre._id %>: <%= genre.totalBooks %> books</li>
-      <% }) %>
-    </ul>
+    <section class="section popular-genres">
+      <h2>Most Popular Genres</h2>
+      <ul>
+        <% popularGenres.forEach(genre => { %>
+          <li><strong><%= genre._id %></strong>: <%= genre.totalBooks %> books</li>
+        <% }) %>
+      </ul>
+    </section>
 
     <!-- Livres sans avis -->
-    <h2>Books Without Reviews</h2>
-    <ul>
-      <% booksWithoutReviews.forEach(book => { %>
-        <li><%= book.title %> by <%= book.author %></li>
-      <% }) %>
-    </ul>
+    <section class="section books-without-reviews">
+      <h2>Books Without Reviews</h2>
+      <ul>
+        <% booksWithoutReviews.forEach(book => { %>
+          <li><strong><%= book.title %></strong> by <%= book.author %></li>
+        <% }) %>
+      </ul>
+    </section>
 
     <!-- Utilisateurs les plus actifs -->
-    <h2>Top Reviewers</h2>
-    <ul>
-      <% topReviewers.forEach(user => { %>
-        <li><%= user.email %>: <%= user.totalReviews %> reviews</li>
-      <% }) %>
-    </ul>
+    <section class="section top-reviewers">
+      <h2>Top Reviewers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Total Reviews</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% topReviewers.forEach(user => { %>
+            <tr>
+              <td><%= user.email %></td>
+              <td><%= user.totalReviews %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </section>
 
     <!-- Livres par décennie -->
-    <h2>Books by Decade</h2>
-    <ul>
-      <% booksByDecade.forEach(decade => { %>
-        <li><%= decade._id %>: <%= decade.totalBooks %> books</li>
-      <% }) %>
-    </ul>
+    <section class="section books-by-decade">
+      <h2>Books by Decade</h2>
+      <ul>
+        <% booksByDecade.forEach(decade => { %>
+          <li><strong><%= decade._id %></strong>: <%= decade.totalBooks %> books</li>
+        <% }) %>
+      </ul>
+    </section>
 
     <!-- Note moyenne par genre -->
-    <h2>Average Rating by Genre</h2>
-    <ul>
-      <% avgRatingByGenre.forEach(genre => { %>
-        <li><%= genre._id %>: Avg Rating: <%= genre.avgRating.toFixed(2) %></li>
-      <% }) %>
-    </ul>
+    <section class="section avg-rating-by-genre">
+      <h2>Average Rating by Genre</h2>
+      <ul>
+        <% avgRatingByGenre.forEach(genre => { %>
+          <li><strong><%= genre._id %></strong>: Avg Rating: <%= genre.avgRating.toFixed(2) %></li>
+        <% }) %>
+      </ul>
+    </section>
 
     <!-- Livres les plus anciens avec avis -->
-    <h2>Oldest Reviewed Books</h2>
-    <ul>
-      <% oldestReviewedBooks.forEach(book => { %>
-        <li><%= book.title %> (Published: <%= book.publishedYear %>)</li>
-      <% }) %>
-    </ul>
+    <section class="section oldest-reviewed-books">
+      <h2>Oldest Reviewed Books</h2>
+      <ul>
+        <% oldestReviewedBooks.forEach(book => { %>
+          <li><strong><%= book.title %></strong> (Published: <%= book.publishedYear %>)</li>
+        <% }) %>
+      </ul>
+    </section>
   </div>
 
   <%- include("./partials/footer.ejs") %>
