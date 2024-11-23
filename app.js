@@ -337,6 +337,10 @@ app.post('/books/:id/review', async (req, res) => {
       { new: true }
     );
 
+    // Incrémenter le compteur de reviews de l'utilisateur
+    user.reviewCount = (user.reviewCount || 0) + 1;
+    await user.save();
+
     res.redirect(`/books/${req.params.id}`);
   } catch (err) {
     console.error('Erreur lors de l\'ajout de l\'avis:', err);
@@ -369,6 +373,24 @@ app.get('/books/:id/rating', async (req, res) => {
     res.status(500).json({ error: "Erreur interne" });
   }
 });
+
+app.get('/users/:email', async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.params.email });
+    if (!user) {
+      return res.status(404).send('User not found');
+    }
+
+    res.render('userProfile', {
+      user,
+      title: `${user.email}'s Profile`
+    });
+  } catch (err) {
+    console.error('Erreur lors de la récupération du profil utilisateur:', err);
+    res.status(500).send('Erreur interne');
+  }
+});
+
 
 app.get('/books', async (req, res) => {
   const { keyword = '', genre = '', sort = '' } = req.query; // Assurez des valeurs par défaut

@@ -21,6 +21,10 @@ const UserSchema = new Schema({
   number:{
     type:Number,
   },
+  reviewCount: { 
+    type: Number, 
+    default: 0 
+  },
 },  
 { timestamps: true });
 
