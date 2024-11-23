@@ -423,6 +423,103 @@ app.get('/books', async (req, res) => {
     res.status(500).send('Erreur interne');
   }
 });
+
+/// Aggregation
+app.get("/aggregations", async (req, res) => {
+  try {
+    // 1. Top 3 des auteurs par le nombre de livres
+    const authorsRanking = await Book.aggregate([
+      { $group: { _id: "$author", totalBooks: { $sum: 1 } } },
+      { $sort: { totalBooks: -1 } },
+      { $limit: 3 }
+    ]);
+
+    // 2. Top 3 des livres les mieux notés
+    const topRatedBooks = await Book.aggregate([
+      { $unwind: "$reviews" },
+      { 
+        $group: { 
+          _id: "$title", 
+          avgRating: { $avg: "$reviews.rating" },
+          totalReviews: { $sum: 1 }
+        } 
+      },
+      { $sort: { avgRating: -1, totalReviews: -1 } },
+      { $limit: 3 }
+    ]);
+
+    // 3. Genres les plus populaires
+    const popularGenres = await Book.aggregate([
+      { $group: { _id: "$genre", totalBooks: { $sum: 1 } } },
+      { $sort: { totalBooks: -1 } }
+    ]);
+
+    // 4. Livres sans avis
+    const booksWithoutReviews = await Book.aggregate([
+      { $match: { reviews: { $exists: true, $size: 0 } } }
+    ]);
+
+    // 5. Utilisateurs les plus actifs
+    const topReviewers = await User.aggregate([
+      { 
+        $lookup: { 
+          from: "books", 
+          localField: "email", 
+          foreignField: "reviews.user", 
+          as: "userReviews"
+        } 
+      },
+      { $addFields: { totalReviews: { $size: "$userReviews" } } },
+      { $sort: { totalReviews: -1 } },
+      { $limit: 5 }
+    ]);
+
+    // 6. Livres par décennie
+    const booksByDecade = await Book.aggregate([
+      { $project: { decade: { $substr: ["$publishedYear", 0, 3] } } },
+      { $group: { _id: { $concat: ["$decade", "0s"] }, totalBooks: { $sum: 1 } } },
+      { $sort: { _id: 1 } }
+    ]);
+
+    // 7. Note moyenne par genre
+    const avgRatingByGenre = await Book.aggregate([
+      { $unwind: "$reviews" },
+      { 
+        $group: { 
+          _id: "$genre", 
+          avgRating: { $avg: "$reviews.rating" },
+          totalBooks: { $sum: 1 }
+        }
+      },
+      { $sort: { avgRating: -1 } }
+    ]);
+
+    // 8. Livres les plus anciens avec avis
+    const oldestReviewedBooks = await Book.aggregate([
+      { $match: { reviews: { $exists: true, $ne: [] } } },
+      { $sort: { publishedYear: 1 } },
+      { $limit: 10 }
+    ]);
+
+    // Renvoyer tous les résultats à la vue
+    res.render("aggregations", {
+      title: "Aggregations Dashboard",
+      authorsRanking,
+      topRatedBooks,
+      popularGenres,
+      booksWithoutReviews,
+      topReviewers,
+      booksByDecade,
+      avgRatingByGenre,
+      oldestReviewedBooks
+    });
+
+  } catch (err) {
+    console.error("Erreur dans les agrégations:", err);
+    res.status(500).send("Erreur interne");
+  }
+});
+
 /** 
 async function importManuscripts() {
   try {

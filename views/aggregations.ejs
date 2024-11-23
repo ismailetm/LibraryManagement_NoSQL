@@ -1,0 +1,80 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+  <div class="content">
+    <h1>Aggregations Dashboard</h1>
+
+    <!-- Classement des auteurs -->
+    <h2>Top Authors by Number of Books</h2>
+    <ul>
+      <% authorsRanking.forEach(author => { %>
+        <li><%= author._id %>: <%= author.totalBooks %> books</li>
+      <% }) %>
+    </ul>
+
+    <!-- Livres les mieux notés -->
+    <h2>Top Rated Books</h2>
+    <ul>
+      <% topRatedBooks.forEach(book => { %>
+        <li>
+          <strong><%= book._id %></strong>: 
+          Avg Rating: <%= book.avgRating.toFixed(2) %>, 
+          Reviews: <%= book.totalReviews %>
+        </li>
+      <% }) %>
+    </ul>
+
+    <!-- Genres les plus populaires -->
+    <h2>Most Popular Genres</h2>
+    <ul>
+      <% popularGenres.forEach(genre => { %>
+        <li><%= genre._id %>: <%= genre.totalBooks %> books</li>
+      <% }) %>
+    </ul>
+
+    <!-- Livres sans avis -->
+    <h2>Books Without Reviews</h2>
+    <ul>
+      <% booksWithoutReviews.forEach(book => { %>
+        <li><%= book.title %> by <%= book.author %></li>
+      <% }) %>
+    </ul>
+
+    <!-- Utilisateurs les plus actifs -->
+    <h2>Top Reviewers</h2>
+    <ul>
+      <% topReviewers.forEach(user => { %>
+        <li><%= user.email %>: <%= user.totalReviews %> reviews</li>
+      <% }) %>
+    </ul>
+
+    <!-- Livres par décennie -->
+    <h2>Books by Decade</h2>
+    <ul>
+      <% booksByDecade.forEach(decade => { %>
+        <li><%= decade._id %>: <%= decade.totalBooks %> books</li>
+      <% }) %>
+    </ul>
+
+    <!-- Note moyenne par genre -->
+    <h2>Average Rating by Genre</h2>
+    <ul>
+      <% avgRatingByGenre.forEach(genre => { %>
+        <li><%= genre._id %>: Avg Rating: <%= genre.avgRating.toFixed(2) %></li>
+      <% }) %>
+    </ul>
+
+    <!-- Livres les plus anciens avec avis -->
+    <h2>Oldest Reviewed Books</h2>
+    <ul>
+      <% oldestReviewedBooks.forEach(book => { %>
+        <li><%= book.title %> (Published: <%= book.publishedYear %>)</li>
+      <% }) %>
+    </ul>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
