@@ -3,142 +3,127 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1235",
         "title": "Recueil.",
-        "Date": "147210",
+        "publishedYear": "147210",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Écriture orientale (Turquie). Texte commenté surligné de rouge. — Distyque persan, tradition pour échapper à l'enfer, glose sur le terme. - ṭahāra. - . — Réclames. — Notes marginales et interlinéaires. Numérotation des paragraphes. - 65 fol. — 215 × 135 mm. — 18 à 21 lignes à la page. — Surface écrite 135 × 80 à 145 × 80 mm. - Papier oriental. - Cartonnage oriental",
-        "Creator": "Taftazani",
+        "author": "Taftazani",
         "Type": "Manuscrit"
     },
     "btv1b11001123s": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1332",
         "title": "ʿUMAR IBN MUḤAMMMAD IBN ʿABD ALLĀH IBN ʿAMMŪYA AL-SUHRAWARDĪ. ʿAwārif al-maʿārif.",
-        "Date": "13810427",
+        "publishedYear": "1381",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Écriture orientale (. - Nasḫī. - ) de deux mains (f. 3 v-161 v, 162-194). — Titres écrits en caractères plus grands bordés de jaune avec l'indication du sujet rubriquée. — Texte vocalisé et séparation des paragraphes marquée par un cercle jaune entouré de cinq points rouges dans la partie plus ancienne (f. 3 v-161 v). — Réclames. — Notes marginales et interlinéaires. - 197 fol. (f. 1 v, 2 v, 195 laissés en blanc). — 250 × 165 mm. — 21 lignes à la page. — Surface écrite 185 × 110 mm. — Quinions numérotés dans la partie ancienne. - Papier oriental. - Reliure refaite, dos veau blond au chiffre de Louis-Philippe doré",
-        "Creator": "Omar Sohrawardi",
+        "author": "Omar Sohrawardi",
         "Type": "Manuscrit"
     },
     "btv1b11005216g": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 597",
         "title": "MAḤMŪD IBN ʿUMAR AL-ZAMAH?ARĪ ABŪ AL-QĀSIM. al-Kaāf ʿan ḥaqāʾiq al-tanzīl, 1er volume (Coran I, 1-VI, 165).",
-        "Date": "1452",
+        "publishedYear": "1452",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Écriture orientale (Iran). Texte du Coran écrit à l'encre rouge. — Réclames. - 284 fol. (f. 284 v laissé en blanc). — Notes marginales. —. - Ḥadīṯ. - et note commentant les termes de. - tafsīr. - et de. - taʾwīl. - (f. 1) ; notes du scribe en arabe et persan et correction se rapportant au texte (f. 284) ; 283 × 185 mm. — 23 lignes à la page. — Surface écrite 200 × 115 mm. - Papier oriental. - Reliure veau raciné brun, dos maroquin rouge, au chiffre de Charles X doré",
-        "Creator": "Al-Zamakhshari",
+        "author": "Al-Zamakhshari",
         "Type": "Manuscrit"
     },
     "btv1b11002915n": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 3365",
         "title": "Arabe 3365",
-        "Date": [
-            {
-                "dateDebut": 1391,
-                "dateFin": 1391
-            },
-            {
-                "dateDebut": 1363,
-                "dateFin": 1363
-            },
-            {
-                "dateDebut": 1363,
-                "dateFin": 1363
-            }
-        ],
+        "publishedYear":  1391,
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 198 feuillets. - Hauteur, 19 centimètres ; largeur, 14 centimètres",
-        "Creator": "BADR AL-DĪN Ğāğermī. Auteur du texte",
+        "author": "BADR AL-DĪN Ğāğermī. Auteur du texte",
         "Type": "Manuscrit",
-        "Place": 
-            {
-                "Lieu de copie": "Baghdad"
+        "Lieu de copie": "Baghdad"
             }
-    },
+,
     "btv1b11003784p": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4283",
         "title": "Arabe 4283",
-        "Date": "1462",
+        "publishedYear": "1462",
         "Language": [
             "arabe",
             "turc ottoman",
             "persan"
         ],
         "Format": "Papier. - 191 feuillets. - Hauteur, 21 centimètres et demi ; largeur, 14 centimètres et demi. 12 lignes par page dans les deux premiers ouvrages, 9 lignes dans le troisième",
-        "Creator": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim)",
+        "author": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim)",
         "Type": "Manuscrit"
     },
     "btv1b110045541": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 623",
         "title": "MUḤAMMAD IBN ABĪ BĀKR AL-RĀZĪ. Asilat al-Qurān al-maǧīd wa-aǧwibathā.",
-        "Date": "13230812",
+        "publishedYear": "1323",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Écriture orientale. Les fol. 5-10, 54-61 sont d'une main différente. — Titres rubriqués. - 119 fol. (la foliotation compte le fol. 55. - bis. - et le fol. 60. - bis. - ). — 185 × 120 mm. — 25 lignes à la page. — Surface écrite 140 × 100 mm. - Papier oriental. - Reliure européenne du XVIIe s., parchemin blanc moucheté",
-        "Creator": "Muḥammad ibn Abī Bakr Rāzī",
+        "author": "Muḥammad ibn Abī Bakr Rāzī",
         "Type": "Manuscrit"
     },
     "btv1b11001538z": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 1952",
         "title": "Flambeau de nouvelles",
-        "Date": "1372",
+        "publishedYear": "1372",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 177 feuillets. - Hauteur, 24 centimètres ; largeur, 17 centimètres. 19 lignes par page",
-        "Creator": "MUḤAMMAD ibn Salāma ibn Ḫaḍr (ibn Ḥakmūn) al-Qoḍāʿī (Abū ʿAbdallah). Auteur du texte",
+        "author": "MUḤAMMAD ibn Salāma ibn Ḫaḍr (ibn Ḥakmūn) al-Qoḍāʿī (Abū ʿAbdallah). Auteur du texte",
         "Type": "Manuscrit"
     },
     "btv1b10088311w": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Supplément Persan 1091",
         "title": "Recueil",
-        "Date": "1477",
+        "publishedYear": "1477",
         "Language": [
             "arabe",
             "persan"
         ],
-        "Format": "Copie anonyme achevée (f. 118v° et 122) en 882 de l'hégire sur . - papier oriental à vergeures verticales. Pontuseaux regroupés par trois. Les feuillets 4, 5 sont filigranés et la feuille de garde du contreplat semble être de même nature. . - 128 feuillets. . - Manuscrit 183 × 130 mm. Surface écrite 121 × 75 mm. - Écriture persane en nasẖī de 21 lignes par page. - Réglure au misṭaraẗ . - 18 cahiers : 1 binion ; 2 cahiers de trinion ; puis une alternance de quinion et ternion (7 qunions et 7 ternions),du f. 12 au f. 122 ; 1 binion et enfin un bifolio. Réclames de la main du copiste. Double foliotation, la plus ancienne est en chiffres indiens, de 1 à 118, la plus récente, comprend 5 feuillets en plus et il est en chiffres arabes, de 1 à 128. . - Une table des matières postérieure à la date de la copie figure au f. 5v°. Elle a été rédigée sur un papier filigrané. Plusieurs ajouts et gloses marginales, en arabe et en persan, passim, sont, la plupart du temps de la main du copiste et parfois de deux ou trois mains différentes. - Le manuscrit porte trois timbres, un sur la première feuille de garde et un deuxième sur le f. 2. Un troisième ; sur le f. 128v°, porte le nom de Riḍā et la date de 1278 h. / 1861. -  Reliure marron du XVe siècle, avec rabat.Les deux plats sont estampés à froid d'une mandorle centrale et le rabat d'un tiers de cercle",
-        "Creator": "Abi Wardi Abu Al-Muzaffar Muhammad bin Al-Abbas Ahmad",
+        "Format": "Copie anonyme achevée (f. 118v° et 122) en 882 de l'hégire sur . - papier oriental à vergeures verticales. Pontuseaux regroupés par trois. Les feuillets 4, 5 sont filigranés et la feuille de garde du contreplat semble être de même nature. . - 128 feuillets. . - Manuscrit 183 × 130 mm. Surface écrite 121 × 75 mm. - Écriture persane en nasẖī de 21 lignes par page. - Réglure au misṭaraẗ . - 18 cahiers : 1 binion ; 2 cahiers de trinion ; puis une alternance de quinion et ternion (7 qunions et 7 ternions),du f. 12 au f. 122 ; 1 binion et enfin un bifolio. Réclames de la main du copiste. Double foliotation, la plus ancienne est en chiffres indiens, de 1 à 118, la plus récente, comprend 5 feuillets en plus et il est en chiffres arabes, de 1 à 128. . - Une table des matières postérieure à la publishedYear de la copie figure au f. 5v°. Elle a été rédigée sur un papier filigrané. Plusieurs ajouts et gloses marginales, en arabe et en persan, passim, sont, la plupart du temps de la main du copiste et parfois de deux ou trois mains différentes. - Le manuscrit porte trois timbres, un sur la première feuille de garde et un deuxième sur le f. 2. Un troisième ; sur le f. 128v°, porte le nom de Riḍā et la publishedYear de 1278 h. / 1861. -  Reliure marron du XVe siècle, avec rabat.Les deux plats sont estampés à froid d'une mandorle centrale et le rabat d'un tiers de cercle",
+        "author": "Abi Wardi Abu Al-Muzaffar Muhammad bin Al-Abbas Ahmad",
         "Type": "Manuscrit"
     },
     "btv1b11003896c": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4296",
         "title": "Les Dizains en-chanteurs ou Vers qui font réfléchir », traité en vers persans, renfermant des mots arabes avec leurs équivalents persans.",
-        "Date": "1410",
+        "publishedYear": "1410",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 56 feuillets. - Hauteur, 21 centimètres ; largeur, 15 centimètres. 7 lignes par page",
-        "Creator": "BAHĀ AL-MIĠĀ al-Qarawī",
+        "author": "BAHĀ AL-MIĠĀ al-Qarawī",
         "Type": "Manuscrit"
     },
     "btv1b10031720d": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 4712",
         "title": "Le Coran",
-        "Date": "1493",
+        "publishedYear": "1493",
         "Language": [
             "arabe",
             "persan"
@@ -151,20 +136,20 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1255",
         "title": "MUḤAMMAD IBN ASʿAD ǦALĀL AL-DĪN AL-DAWWĀNĪ. Commentaire du Ṭawāliʿ al-anwār min matāliʿ an-anẓār de ʿAbd Allāh ibn ʿUmar al-Bayḍāwī.",
-        "Date": "14910325",
+        "publishedYear": "1491",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Écriture orientale (Turquie). — Titres rubriqués et texte commenté surligné à l'encre rouge. — Réclames. - 223 fol. — 185 × 100 mm. — 15 à 25 lignes à la page. — Surface écrite 140 × 75 mm. - Papier oriental. - Reliure orientale, maroquin noir",
-        "Creator":"Muḥammad ibn Asʻad Dawwānī",
+        "author":"Muḥammad ibn Asʻad Dawwānī",
         "Type": "Manuscrit"
     },
     "btv1b11003894g": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4294",
         "title": "Verbe",
-        "Date": "1238",
+        "publishedYear": "1238",
         "Language": [
             "arabe",
             "persan"
@@ -176,7 +161,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 6609",
         "title": "Recueil de prières en arabe formé d'une litanie dans laquelle Allah est invoqué par ses mille et un noms, dans le texte de laquelle on doit intercaler les feuillets 38-50 après le folio 12, par suite d'une interversion ; elle est suivie d'une autre litanie que l'on doit réciter après elle, et dans laquelle on implore la miséricorde d'Allah sur le prophète Mahomet, sur les Prophètes, sur tous les Musulmans (fol. 34 verso) ; de la prière des cent tasbih, avec une notice en persan sur ses vertus (folio 35 verso), incomplète ; manuscrit de luxe.",
-        "Date": "1419",
+        "publishedYear": "1419",
         "Language": [
             "arabe",
             "persan"
@@ -188,83 +173,74 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1234",
         "title": "MASʿŪD IBN ʿUMAR SAʿD AL-DĪN AL-TAFTĀZĀNĪ. Commentaire sur les ʿAqāʾid de ʿUmar ibn Muḥammad Naǧm al-Dīn al-Nasafī.",
-        "Date": "1459-1460",
+        "publishedYear": "1459",
         "Language": [
             "arabe",
             "persan",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Turquie). — Titres rubriqués. —. - Šiʿr. - sur la violette. - šiʿr fī taṣnīf hāḏā l-kitāb. - de Masʿūd ibn ʿUmar al-Taftāzānī, fragment de. - figh. - , autre fragment sur la. - waṣiyya. - (contreplat supérieur) ; ʿ. - aqāʾid. - de ʿUmar ibn Muḥammad Naǧm al-Dīn al-Nasafī (f. 1-1 v, 111-111 v) ; fragment sur le. - naẓar. - entre les fol. 11 et 12 ; sentences, fragment philosophique sur. - al-māhiyya. - šiʿr. - en persan. - masāʾil. - (f. 109 v). - duʿāʾ fī l-ṭāʿūn. - (f. 110). - šiʿr. - en persan (f. 110-110 v), au centre du fol. 110 v, le fragment est de ?ams al-Maġribī ; fragment de théologie. - šiʿr. - attribué à ʿAbd al-Qādir Muḥyī al-Dīn al-Kīlānī au sujet du pèlerinage, propos attribués au šayḫ ʿAbd al-Ġaffār al-Qūṣī dans son. - Kitāb al-Waḥīd. - (contreplat inférieur). — Réclames. — Bandeau dessiné à la plume contenant la. - basmala. - (f. 2 v). — Gloses marginales et interlinéaires très nombreuses. - 111 fol. Folioté en chiffres arabes. — 225 × 130 mm. — 13 lignes à la page. — Surface écrite 110 × 55 mm. - Papier oriental. - Reliure orientale à rabat ; plaque centrale, fleurons et filets dorés, exécutée au temps d'un certain Mollā... ʿAlāʾ al-Dīn en 1056/ 1646",
-        "Creator": "Taftazani",
+        "author": "Taftazani",
         "Type": "Manuscrit"
     },
     "btv1b110005197": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 828",
         "title": "Arabe 828",
-        "Date": "1401-1600",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "persan",
             "turc ottoman"
         ],
         "Format": "Titres rubriques. — Réclames. - 176 fol. (f. 9 v, 14. - bis. - 24. - bis. - v, 55. - bis. - v, 162 v, 163 v, 164 v, 165 v, 166-166 v laissés en blanc). La foliotation compte les fol. 14. - bis. - 24. - bis. - 55. - bis. - — 210 × 140 mm. — Surface écrite 140 × 85 mm, 17 lignes à la page (f. 4-8 v) 150 × 85, 11 lignes à la page (f. 10 v-158 v), 130 × 65 mm, 9 lignes à la page (f. 167 v-176). - Papier occidental de diverses provenances (f. 4-8 ; 10 v-176). - Reliure veau raciné brun, dos maroquin rouge, au chiffre de Louis-Philippe doré",
-        "Creator": "Aḥmad ibn Muḥammad Qudūrī",
+        "author": "Aḥmad ibn Muḥammad Qudūrī",
         "Type": "Manuscrit"
     },
     "btv1b11002300q": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2916",
         "title": "Le Canon d'Avicenne.",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 222 feuillets. - Hauteur, 25 centimètres et demi ; largeur, 17 centimètres. 9 lignes par page",
-        "Creator": "Al-ḤUSAYN ibn ʿAbdallah Ibn Sīna (Abū ʿAlī)",
+        "author": "Al-ḤUSAYN ibn ʿAbdallah Ibn Sīna (Abū ʿAlī)",
         "Type": "Manuscrit"
     },
     "btv1b11002088g": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2946",
         "title": "Arabe 2946",
-        "Date": [
-            {
-                "dateDebut": 1455,
-                "dateFin": 1456
-            },
-            {
-                "dateDebut": 1454,
-                "dateFin": 1455
-            }
-        ],
+        "publishedYear": 1455,
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 289 feuillets. - Hauteur, 27 centimètres ; largeur, 18 centimètres. 21 lignes par page",
-        "Creator": "MUḤAMMAD ibn ʿAlī ibn ʿUmar al-Samarqandī (Nağīb al-Dīn)",
+        "author": "MUḤAMMAD ibn ʿAlī ibn ʿUmar al-Samarqandī (Nağīb al-Dīn)",
         "Type": "Manuscrit"
     },
     "btv1b11002056b": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2839",
         "title":"Commentaire des Aphorismes d'Hippocrate",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 161 feuillets. - Hauteur, 22 centimètres ; largeur, 16 centimètres. 19 lignes par page",
-        "Creator": "HONAYN ibn Isḥāq (Abū Yazīd)",
+        "author": "HONAYN ibn Isḥāq (Abū Yazīd)",
         "Type": "Manuscrit"
     },
     "btv1b11002926h": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 3390",
         "title": "Recueil, divisé en vingt chapitres, sans titre, ni nom d'auteur, qui renferme des sentences, des historiettes, des paroles spirituelles attribuées, les unes à Mahomet, les autres à des saints personnages et à des philosophes, enfin un grand nombre de pièces de vers des principaux poètes arabes et persans, parmi lesquelles l'auteur a inséré plusieurs morceaux de sa composition.",
-        "Date": "1401-1500",
+        "publishedYear": "1500",
         "Language": [
             "arabe",
             "persan"
@@ -276,75 +252,62 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 3088",
         "title": "Arabe 3088",
-        "Date": [
-            {
-                "dateDebut": 1440,
-                "dateFin": 1441
-            },
-            {
-                "dateDebut": 1442,
-                "dateFin": 1443
-            },
-            {
-                "dateDebut": 1442,
-                "dateFin": 1442
-            }
-        ],
+        "publishedYear": 1440,
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 87 feuillets. - Écritures diverses. - Hauteur, 23 centimètres ; largeur, 14 centimètres",
-        "Creator": "Abu Nasr Farahi",
+        "author": "Abu Nasr Farahi",
         "Type": "Manuscrit",
-        "Place": "Lieu de copie : Šīrāz"
+        "Lieu de copie" : "Šīrāz"
     },
     "btv1b110038899": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4289",
-        "title": "مقدّمة الادب « Introduction à la philologie », par ʾl-Qâsim Maḥmoûd ibn ʿOmar Al-Zamakhscharî.",
-        "Date": "1401-1500",
+        "title": "Introduction à la philologie",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 120 feuillets. - Hauteur, 16 centimètres et demi ; largeur, 12 centimètres. 6 lignes par page",
-        "Creator": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim). Auteur du texte",
+        "author": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim)",
         "Type": "Manuscrit"
     },
     "btv1b110024774": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 2687",
         "title": "Arabe 2687",
-        "Date": "1428-1429",
+        "publishedYear": "1428",
         "Language": [
             "arabe",
             "turc ottoman",
             "persan"
         ],
         "Format": "Papier. - 80 feuillets. - Écritures diverses. - Hauteur, 17 centimètres ; largeur, 12 centimètres",
-        "Creator": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi",
+        "author": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi",
         "Type": "Manuscrit"
     },
     "btv1b10884381m": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 2687",
         "title": "Arabe 2687",
-        "Date": "1428-1429",
+        "publishedYear": "1428",
         "Language": [
             "arabe",
             "turc ottoman",
             "persan"
         ],
         "Format": "Papier. - 80 feuillets. - Écritures diverses. - Hauteur, 17 centimètres ; largeur, 12 centimètres",
-        "Creator": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi. Auteur du texte",
+        "author": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi",
         "Type": "Manuscrit"
     },
     "btv1b10884676k": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 6050",
         "title": "Recueil de vingt-six traditions de Mahomet, rangées d'après l'ordre alphabétique, et traduites en vers persans, avec le titre de Kitab-i hadith-i sharif ; des prières en langue arabe, pour les diverses circonstances de la vie, précédées d'une courte introduction en persan, sont écrites dans les marges du manuscrit.",
-        "Date": "1486",
+        "publishedYear": "1486",
         "Language": [
             "arabe",
             "persan"
@@ -356,189 +319,189 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 762",
         "title": "Recueil.",
-        "Date": "14770509",
+        "publishedYear": "1477",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Turquie). — Réclames. - 38 fol. 175 × 130 mm. — 15 lignes à la page. — Surface écrite 135 × 90 mm. - Papier oriental. - Demi-reliure orientale à rabat, dos maroquin brun",
-        "Creator": "MUḤAMMAD IBN MUḤAMMAD ZAYN AL-DĪN AL-ḪAWĀFĪ ABŪ BAKR.",
+        "author": "MUḤAMMAD IBN MUḤAMMAD ZAYN AL-DĪN AL-ḪAWĀFĪ ABŪ BAKR.",
         "Type": "Manuscrit"
     },
     "btv1b110013831": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1024",
         "title": "ʿUBAYD ALLĀH IBN MUḤAMMAD AL-FARĠĀNĪ. Commentaire sur le Ġāyat al-quṣwā de ʿAbd Allāh ibn ʿUmar al-Bayḍāwī, acéphale, une longue préface précède le début du Kitāb al-ṭahāra.",
-        "Date": "14040101",
+        "publishedYear": "1404",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
-        "Format": "; Écriture orientale (Iran). — Titres rubriqués. — Essais de plume en turc ; date de la prise de Tabriz par les Turcs 917/1511 et 922/1516 (f. 1) ; début d'un traité (f. 1 v). — Réclames. - 436 fol. — 250 × 145 mm. — 23 lignes à la page. — Surface écrite 195 × 115 mm. - Papier oriental. - Reliure européenne, veau raciné brun, dos chagrin rouge, au chiffre de Louis-Philippe doré",
-        "Creator": "Ubaidullah bin Muhammad Al-Farghani",
+        "Format": "; Écriture orientale (Iran). — Titres rubriqués. — Essais de plume en turc ; publishedYear de la prise de Tabriz par les Turcs 917/1511 et 922/1516 (f. 1) ; début d'un traité (f. 1 v). — Réclames. - 436 fol. — 250 × 145 mm. — 23 lignes à la page. — Surface écrite 195 × 115 mm. - Papier oriental. - Reliure européenne, veau raciné brun, dos chagrin rouge, au chiffre de Louis-Philippe doré",
+        "author": "Ubaidullah bin Muhammad Al-Farghani",
         "Type": "Manuscrit"
     },
     "btv1b110023032": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2920",
         "title": "Compendium de médecine",
-        "Date": "1383",
+        "publishedYear": "1383",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Papier. - 224 feuillets. - Hauteur, 19 centimètres et demi ; largeur, 14 centimètres. 11 à 13_lignes par page",
-        "Creator": "Al-ḤUSAYN ibn ʿAbdallah Ibn Sīna (Abū ʿAlī)",
+        "author": "Al-ḤUSAYN ibn ʿAbdallah Ibn Sīna (Abū ʿAlī)",
         "Type": "Manuscrit"
     },
     "btv1b11000640t": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 892",
         "title": "ʿABD ALLĀH IBN AḤMAD IBN MAḤMŪD ḤĀFIẒ AL-DĪN AL-NASAFĪ",
-        "Date": "143410",
+        "publishedYear": "1434",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale. — Titres rubriqués. — Réclames. — Gloses marginales et interlinéaires. - ḥadīṯ. - et notes en turc (f. 1 v). - waqf. - de la part de Maḥmūd ibn Ibrāhīm al-Āmasawī, note de morale et. - duʿā. - (f. 2) ; gloses (f. 8. - bis. - -8. - bis. - v) ; note de logique et début d'un commentaire sur un traité de logique (f. 13. - bis. - ) ; notes de. - fiqh. - sur le divorce (f. 53. - bis. - -53. - bis. - v, 53. - ter. - -53. - ter. - v) ; diverses. - masāʾil. - (f. 147-149) ; essais de plume (f. 149 v). - 149 fol. (la foliotation compte les fol. 8. - bis. - 13. - bis. - 53. - bis. - 53. - ter. - et 93. - bis. - f. 93. - bis. - v laissé en blanc). — 285 × 180 mm. — 11 lignes à la page. — Surface écrite 175 × 95 mm. - Papier oriental. - Reliure occidentale veau raciné brun, dos maroquin rouge, au chiffre de Louis XVIII doré",
-        "Creator": "Abdullah bin Ahmed Al-Nasafi",
+        "author": "Abdullah bin Ahmed Al-Nasafi",
         "Type": "Manuscrit"
     },
     "btv1b11001415d": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 999",
         "title": "AḤMAD IBN IBRĀHĪM IBN ʿABD AL-RAḤĪM AL-ʿIRĀQĪ ABŪ ZURʿA. al-Bahǧa al-marḍiyya fī šarḥ al-Bahǧa al-warḍiyya (deuxième partie : Bāb al-laqṭa wa-l-laqīṭ — Bāb ʿitq umm al-walad).",
-        "Date": "14550707",
+        "publishedYear": "1455",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Égypte). — Titres rubriqués. — Réclames. — Peu de notes et de corrections marginales. - 245 fol. — 280 × 180 mm. — 31 lignes à la page. — Surface écrite 200 × 125 mm. — Numérotés en lettres arabes. - Papier oriental. - Demi-reliure orientale à rabat",
-        "Creator": "Ahmed bin Ibrahim Al-Iraqi",
+        "author": "Ahmed bin Ibrahim Al-Iraqi",
         "Type": "Manuscrit"
     },
     "btv1b100375037": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2524",
         "title": "Arabe 2524",
-        "Date": "1412",
+        "publishedYear": "1412",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Papier. - 127 feuillets. - Écritures diverses du XIVe et du XVe siècle. - Hauteur, 18 centimètres et demi ; largeur, 13 centimètres. 21 lignes par page",
-        "Creator": "AḤMAD ibn Ibrāhīm ibn Ḫalīl al-Ḥalabī",
+        "author": "AḤMAD ibn Ibrāhīm ibn Ḫalīl al-Ḥalabī",
         "Type": "Manuscrit"
     },
     "btv1b11000515f": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 821",
         "title": "MUḤAMMAD IBN AL-ḤASAN AL-ŠAYBĀNĪ. al-Ǧāmiʿ al-ṣaġīr. Recension de ʿUmar ibn ʿAbd al-ʿAzīz Ḥusām al-Dīn al-Buḫārī.",
-        "Date": "1340",
+        "publishedYear": "1340",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Asie centrale). — Titres rubriqués au début. — Note effacée sur les bienfaits de la prière (f. 1) ; essais de plumes (f. 1 v) ; note au sujet des livres mentionnés dans le texte (f. 2) ; table des titres des chapitres (f. 3 v). - fatāwī. - rapportées du texte (f. 4). - Muškilāt. - (f. 191 v-192). - fatāwī. - (f. 192 v-193) ; notes de morale (f. 193 v) ; vers en turc (f. 194). — Réclames. — Texte en partie vocalisé. - 194 fol. (f. 2 v, 3, 194 laissés en blanc). — 240 × 150 mm. — 15 à 17 lignes à la page. — Surface écrite 150 × 80 mm. - Papier oriental (fol. 2 et 3 refaits en papier occidental). - Reliure veau tacheté brun, dos maroquin rouge, au chiffre de Louis XV doré",
-        "Creator": "MUḤAMMAD IBN AL-ḤASAN AL-ŠAYBĀNĪ",
+        "author": "MUḤAMMAD IBN AL-ḤASAN AL-ŠAYBĀNĪ",
         "Type": "Manuscrit"
     },
     "btv1b11005181r": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 719",
         "title": "AL-ḤUSAYN IBN MASʿŪD AL-FARRĀʾ AL-BAĠAWĪ. Maṣābīḥ al-sunna. Un faux-titre a été inscrit plus récemment.",
-        "Date": "139609",
+        "publishedYear": "1396",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Égypte). — Texte vocalisé. — Notes marginales et interlinéaires. — Table des titres des chapitres (f. 1 v) ; fragment lexicographique sur les termes de. - ḥadīt. - (f. 2) ; formule aphrodisiaque en turc (f. 334). — Réclames. - 334 fol. (f. 1, 334 v laissés en blanc). — 280 × 185 mm. — 17 lignes à la page. — Surface écrite 170 × 105 mm. - Papier oriental. - Reliure refaite, style Louis-Philippe",
-        "Creator": "Al-Baghawi",
+        "author": "Al-Baghawi",
         "Type": "Manuscrit"
     },
     "btv1b110051932": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 624",
         "title": "Recueil.",
-        "Date": "1432-1433",
+        "publishedYear": "1432",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale. Les fol. 209 v-213 v sont de la même main, les autres fol. sont de mains différentes. — Titres rubriqués. — Vers turcs (f. 209), deux pièces en turc (f. 214 v, 215 v, 216 v). — Réclames. - 216 fol. (la foliotation compte le fol. 90. - bis. - ; f. 214 et 216 laissés en blanc). — 180 × 140 mm. — Surface écrite 125 × 95, 19 lignes à la page (f. 1 v-154 v, 209 v-213 v), 105 × 75, 13 lignes à la page (f. 155 v-208 v). - Papier oriental (nombreux fol. de couleur saumon). - Demi-reliure orientale, dos chagrin brun",
-        "Creator": "Ibn Al-Anbâri",
+        "author": "Ibn Al-Anbâri",
         "Type": "Manuscrit"
     },
     "btv1b11001432w": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1132",
         "title": "SADĪD AL-DĪN AL-KĀŠĠARĪ. Munyat al-Muṣallī wa-ġunyat al-Mubtadiʾ.",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Égypte). — Titres dorés. — Frontispice orné (f. 1). — Deux hémistiches en turc (f. 116). - 117 fol. Fol. de couleur saumon. — 265 × 180 mm. — 11 lignes à la page. — Surface écrite 160 × 110 mm, entourée d'un filet doré. - Papier oriental. - Reliure orientale à rabat, maroquin rouge ; plaque centrale et filets estampés à froid",
-        "Creator": "Sadīd al-Dīn Kashgharī",
+        "author": "Sadīd al-Dīn Kashgharī",
         "Type": "Manuscrit"
     },
     "btv1b110012324": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1266",
         "title": "Recueil.",
-        "Date": "1301-1500",
+        "publishedYear": "1301",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Turquie). — Titres rubriqués sauf dans les pièces 3 et 4. — Réclames. - 280 fol. (f. 245 v-248, 249-249 v, 269 v, 271 laissés en blanc). La foliotation compte le fol. 220 bis. — 170 × 125 mm. — 20 lignes à la page. — Surface écrite 145 × 100 mm, 20 lignes à la page (f. 1 v-112 v) ; 130-140 × 90 mm, 17 lignes à la page (f. 113-180 v) ; 140 × 105 mm, 15 lignes à la page (f. 181-217) ; 115 × 80 mm, 11 lignes à la page (f. 218 v-245 v) ; 140 × 85 mm, 14 lignes à la page (f. 250 v-269), encadrée de deux filets rubriqués ; 165 × 115 mm, 26 lignes à la page (f. 270) ; 145 × 95 mm, 10 lignes à la page (f. 271 v-280 v). - Papier oriental. - Demi-reliure orientale dont le rabat a disparu",
-        "Creator": "Muhammad ben Masoud Al-Qaysari",
+        "author": "Muhammad ben Masoud Al-Qaysari",
         "Type": "Manuscrit"
     },
     "btv1b11005108k": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 763",
         "title": "AL-ḤUSAYN AL-FATḤĪ AL-ŠĪRĀZĪ. Nuzhat al-nāẓir li-l-sulṭān al-mālik al-Malik al-Ẓāhir.",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale (Égypte). —. - Bismillah. - initial de couleur bleue et titres rubriqués et dorés. — Réclames. — Préface dédicatoire peut être de la main de Aḥmad ibn ʿAlī ibn Ḥaǧar al-ʿAsqalānī (f. 1 v) ; quelques mots en turc (f. 1) ; extrait du. - Musnad. - de Dārimī sur les mérites des trois premiers califes (f. 51-52). - 52 fol. (f. 52 v laissé en blanc). — 180 × 135 mm. — 7 lignes à la page. — Surface écrite 125 × 90 mm, bordée d'un filet à l'encre bleue. - Papier oriental (Quelques feuillets de couleur saumon). - Demi-reliure orientale à rabat, papier marbré à tourniquets ; doublée de papier ocre",
-        "Creator": "Hussein Al-Fathi Al-Shirazi",
+        "author": "Hussein Al-Fathi Al-Shirazi",
         "Type": "Manuscrit"
     },
     "btv1b11004319v": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 598",
-        "title": "MAḤMŪD IBN ʿUMAR AL-ZAMAḪARĪ ABŪ AL-QĀSIM. al-Kaāfʿ an ḥaqāʾiq al-tanzīl, 2e volume (Coran VII, 1-XVIII, 110).",
-        "Date": "1401-1500",
+        "title": "MAḤMŪD IBN ʿUMAR AL-ZAMAḪARĪ ABŪ AL-QĀSIM. al-Kaāfʿ an ḥaqāiq al-tanzīl, 2e volume (Coran VII, 1-XVIII, 110).",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Écriture orientale. — Texte du Coran écrit à l'encre rouge. — Réclames. - 230 fol. (f. 211, 230 v laissés en blanc). — 320 × 210 mm. — 23 lignes à la page. — Surface écrite 210 × 143 mm ; le fol. 211 d'une autre dimension a été rajouté. - Papier oriental. - Reliure veau raciné brun, dos maroquin rouge ; encadrement doré au chiffre de Charles X doré",
-        "Creator": "Mahmoud bin Omar Al-Zamakhshari",
+        "author": "Mahmoud bin Omar Al-Zamakhshari",
         "Type": "Manuscrit"
     },
     "btv1b100735122": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title":"Yusuf ibn Qawzughli, le fils d'ibn al-Jawzi. Miroir du temps [dans l'histoire des notables]",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Nashẖī. - . - Vers ponctués de points ou virgules inversées rouges. - Quelques mots terminés dans la marge. - Rares vocalisations. - Titres rubriqués. Trace des mots destinés à la rubrication parallèlement au bord des feuillets. - Réclames à tous les feuillets. - Vergeures horizontales. - Pontuseaux groupés par trois. - Feuillets de couleur ocre (f. 33, 38, 43...) - 313 fol. - 280 x 185 mm. - 25 lignes à la page. - Surface écrite 195 x 120 mm. - Réglure à la. - miṣṭara. - . - Quinions. - Papier non filigrané. - Frontispice. - Reliure à recouvrement ; plaques centrales en forme de mandorles polylobées, 70 x 51 mm ; décor de bouquet à tige brisée, cf. DEROCHE (F.), Les Manuscrits du Coran : du Maghreb à l'Insulinde. Paris, 1985, II, type OAII, bordure de filets estampés à froid. Axe vertical marqué par un filet. Bordure de filets estampés à froid au rabat et sur la partie protégeant la gouttière",
-        "Creator": "Yusuf bin Qazughli, la tribu d'Al-Jawzi",
+        "author": "Yusuf bin Qazughli, la tribu d'Al-Jawzi",
         "Type": "Manuscrit"
     },
     "btv1b525034395": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Turc 208",
         "title": "Manuel de grammaire.",
-        "Date": "1486-1500",
+        "publishedYear": "1486",
         "Language": [
             "turc ottoman",
             "arabe"
@@ -550,20 +513,20 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title":"Yusuf ibn Qawzughli, le fils d'ibn al-Jawzi. Miroir du temps [dans l'histoire des notables]",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Nashẖī. - . - Vers ponctués de points ou virgules inversées rouges. - Quelques mots terminés dans la marge. - Rares vocalisations. - Titres rubriqués. Trace des mots destinés à la rubrication parallèlement au bord des feuillets. - Réclames à tous les feuillets. - Vergeures horizontales. - Pontuseaux groupés par trois. - Feuillets de couleur ocre (f. 33, 38, 43...) - 313 fol. - 280 x 185 mm. - 25 lignes à la page. - Surface écrite 195 x 120 mm. - Réglure à la. - miṣṭara. - . - Quinions. - Papier non filigrané. - Frontispice. - Reliure à recouvrement ; plaques centrales en forme de mandorles polylobées, 70 x 51 mm ; décor de bouquet à tige brisée, cf. DEROCHE (F.), Les Manuscrits du Coran : du Maghreb à l'Insulinde. Paris, 1985, II, type OAII, bordure de filets estampés à froid. Axe vertical marqué par un filet. Bordure de filets estampés à froid au rabat et sur la partie protégeant la gouttière",
-        "Creator": "Yusuf bin Qazughli, la tribu d'Al-Jawzi",
+        "author": "Yusuf bin Qazughli, la tribu d'Al-Jawzi",
         "Type": "Manuscrit"
     },
     "btv1b11003732q": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4304",
         "title": "Le livre des verbes",
-        "Date": "1301-1400",
+        "publishedYear": "1301",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -575,7 +538,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Turc 208",
         "title": "Manuel de grammaire.",
-        "Date": "1486-1500",
+        "publishedYear": "1486",
         "Language": [
             "turc ottoman",
             "arabe"
@@ -587,13 +550,13 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title": "Yusuf bin Quzughli, le fils de bin al-Jawzi Miroir du temps [dans l'histoire des notables].",
-        "Date": "1401-1500",
+        "publishedYear": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
         ],
         "Format": "Nashẖī. - . - Vers ponctués de points ou virgules inversées rouges. - Quelques mots terminés dans la marge. - Rares vocalisations. - Titres rubriqués. Trace des mots destinés à la rubrication parallèlement au bord des feuillets. - Réclames à tous les feuillets. - Vergeures horizontales. - Pontuseaux groupés par trois. - Feuillets de couleur ocre (f. 33, 38, 43...) - 313 fol. - 280 x 185 mm. - 25 lignes à la page. - Surface écrite 195 x 120 mm. - Réglure à la. - miṣṭara. - . - Quinions. - Papier non filigrané. - Frontispice. - Reliure à recouvrement ; plaques centrales en forme de mandorles polylobées, 70 x 51 mm ; décor de bouquet à tige brisée, cf. DEROCHE (F.), Les Manuscrits du Coran : du Maghreb à l'Insulinde. Paris, 1985, II, type OAII, bordure de filets estampés à froid. Axe vertical marqué par un filet. Bordure de filets estampés à froid au rabat et sur la partie protégeant la gouttière",
-        "Creator": " Yusuf bin Qazughli",
+        "author": " Yusuf bin Qazughli",
         "Type": "Manuscrit"
     }
 }
