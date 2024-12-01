@@ -10,6 +10,7 @@ const bookSchema = new mongoose.Schema({
   isbn: { type: String },
   genre: { type: String },
   publishedYear: { type: Number },
+  DigitisedBy: { type: String },
   availableCopies: { type: Number, default: 0 },
   pdfBook: { type: mongoose.Schema.Types.ObjectId, ref: 'fs.files' }, 
   DigitisedBy: String,
@@ -28,3 +29,4 @@ const bookSchema = new mongoose.Schema({
 const Book = mongoose.model('Book', bookSchema);
 
 module.exports = Book;
+  
