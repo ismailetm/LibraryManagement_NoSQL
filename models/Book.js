@@ -3,12 +3,12 @@ const Schema = mongoose.Schema;
 
 // Schéma flexible pour un livre
 const bookSchema = new Schema({
-  title: { type: String },
+  title: { type: String , required: true},
   author: { type: String },
   isbn: { type: String },
-  genre: { type: String },
+  genre: { type: String , required: true},
   publishedYear: { type: Number },
-  availableCopies: { type: Number, default: 0 },
+  availableCopies: { type: Number, default: 1 , required: true},
   pdfBook: { type: mongoose.Schema.Types.ObjectId, ref: 'fs.files' }, // Référence à GridFS
   reviews: [ // Tableau d'avis
     {

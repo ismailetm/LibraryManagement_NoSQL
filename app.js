@@ -319,11 +319,19 @@ app.post('/books/delete/:id', (req, res) => {
     });
 });
 
-// new edit
+// new edit add review
 app.post('/books/:id/review', async (req, res) => {
-  const { email, password, comment, rating } = req.body;
-
   try {
+    // Nettoyer les données : supprimer les champs vides ou non définis
+    const cleanedData = {};
+    for (const key in req.body) {
+      if (req.body[key]) { // Vérifie que la valeur n'est ni vide ni undefined
+        cleanedData[key] = req.body[key];
+      }
+    }
+
+    const { email, password, comment, rating } = cleanedData; // Utiliser les données nettoyées
+
     // Vérifier l'utilisateur dans la base de données
     const user = await User.findOne({ email, password });
     if (!user) {
@@ -347,6 +355,7 @@ app.post('/books/:id/review', async (req, res) => {
     res.status(500).send('Erreur interne');
   }
 });
+
 
 app.get('/books/:id/rating', async (req, res) => {
   const bookId = req.params.id;
