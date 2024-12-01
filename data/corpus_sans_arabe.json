@@ -16,7 +16,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1332",
         "title": "ʿUMAR IBN MUḤAMMMAD IBN ʿABD ALLĀH IBN ʿAMMŪYA AL-SUHRAWARDĪ. ʿAwārif al-maʿārif.",
-        "Date": "13810427",
+        "Date": "1381",
         "Language": [
             "arabe",
             "persan"
@@ -42,20 +42,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 3365",
         "title": "Arabe 3365",
-        "Date": [
-            {
-                "dateDebut": 1391,
-                "dateFin": 1391
-            },
-            {
-                "dateDebut": 1363,
-                "dateFin": 1363
-            },
-            {
-                "dateDebut": 1363,
-                "dateFin": 1363
-            }
-        ],
+        "Date":  1391,
         "Language": [
             "arabe",
             "persan"
@@ -63,11 +50,9 @@
         "Format": "Papier. - 198 feuillets. - Hauteur, 19 centimètres ; largeur, 14 centimètres",
         "Creator": "BADR AL-DĪN Ğāğermī. Auteur du texte",
         "Type": "Manuscrit",
-        "Place": 
-            {
-                "Lieu de copie": "Baghdad"
+        "Lieu de copie": "Baghdad"
             }
-    },
+,
     "btv1b11003784p": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4283",
@@ -86,7 +71,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 623",
         "title": "MUḤAMMAD IBN ABĪ BĀKR AL-RĀZĪ. Asilat al-Qurān al-maǧīd wa-aǧwibathā.",
-        "Date": "13230812",
+        "Date": "1323",
         "Language": [
             "arabe",
             "persan"
@@ -151,7 +136,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1255",
         "title": "MUḤAMMAD IBN ASʿAD ǦALĀL AL-DĪN AL-DAWWĀNĪ. Commentaire du Ṭawāliʿ al-anwār min matāliʿ an-anẓār de ʿAbd Allāh ibn ʿUmar al-Bayḍāwī.",
-        "Date": "14910325",
+        "Date": "1491",
         "Language": [
             "arabe",
             "persan"
@@ -188,7 +173,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1234",
         "title": "MASʿŪD IBN ʿUMAR SAʿD AL-DĪN AL-TAFTĀZĀNĪ. Commentaire sur les ʿAqāʾid de ʿUmar ibn Muḥammad Naǧm al-Dīn al-Nasafī.",
-        "Date": "1459-1460",
+        "Date": "1459",
         "Language": [
             "arabe",
             "persan",
@@ -202,7 +187,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 828",
         "title": "Arabe 828",
-        "Date": "1401-1600",
+        "Date": "1401",
         "Language": [
             "arabe",
             "persan",
@@ -216,7 +201,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2916",
         "title": "Le Canon d'Avicenne.",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "persan"
@@ -229,16 +214,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2946",
         "title": "Arabe 2946",
-        "Date": [
-            {
-                "dateDebut": 1455,
-                "dateFin": 1456
-            },
-            {
-                "dateDebut": 1454,
-                "dateFin": 1455
-            }
-        ],
+        "Date": 1455,
         "Language": [
             "arabe",
             "persan"
@@ -251,7 +227,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 2839",
         "title":"Commentaire des Aphorismes d'Hippocrate",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "persan"
@@ -264,7 +240,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 3390",
         "title": "Recueil, divisé en vingt chapitres, sans titre, ni nom d'auteur, qui renferme des sentences, des historiettes, des paroles spirituelles attribuées, les unes à Mahomet, les autres à des saints personnages et à des philosophes, enfin un grand nombre de pièces de vers des principaux poètes arabes et persans, parmi lesquelles l'auteur a inséré plusieurs morceaux de sa composition.",
-        "Date": "1401-1500",
+        "Date": "1500",
         "Language": [
             "arabe",
             "persan"
@@ -276,20 +252,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 3088",
         "title": "Arabe 3088",
-        "Date": [
-            {
-                "dateDebut": 1440,
-                "dateFin": 1441
-            },
-            {
-                "dateDebut": 1442,
-                "dateFin": 1443
-            },
-            {
-                "dateDebut": 1442,
-                "dateFin": 1442
-            }
-        ],
+        "Date": 1440,
         "Language": [
             "arabe",
             "persan"
@@ -297,26 +260,26 @@
         "Format": "Papier. - 87 feuillets. - Écritures diverses. - Hauteur, 23 centimètres ; largeur, 14 centimètres",
         "Creator": "Abu Nasr Farahi",
         "Type": "Manuscrit",
-        "Place": "Lieu de copie : Šīrāz"
+        "Lieu de copie" : "Šīrāz"
     },
     "btv1b110038899": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4289",
-        "title": "مقدّمة الادب « Introduction à la philologie », par ʾl-Qâsim Maḥmoûd ibn ʿOmar Al-Zamakhscharî.",
-        "Date": "1401-1500",
+        "title": "Introduction à la philologie",
+        "Date": "1401",
         "Language": [
             "arabe",
             "persan"
         ],
         "Format": "Papier. - 120 feuillets. - Hauteur, 16 centimètres et demi ; largeur, 12 centimètres. 6 lignes par page",
-        "Creator": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim). Auteur du texte",
+        "Creator": "MAḤMŪD ibn ʿUmar al-Zamaḫarī (Ğār Allah Abū al-Qāsim)",
         "Type": "Manuscrit"
     },
     "btv1b110024774": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 2687",
         "title": "Arabe 2687",
-        "Date": "1428-1429",
+        "Date": "1428",
         "Language": [
             "arabe",
             "turc ottoman",
@@ -330,14 +293,14 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 2687",
         "title": "Arabe 2687",
-        "Date": "1428-1429",
+        "Date": "1428",
         "Language": [
             "arabe",
             "turc ottoman",
             "persan"
         ],
         "Format": "Papier. - 80 feuillets. - Écritures diverses. - Hauteur, 17 centimètres ; largeur, 12 centimètres",
-        "Creator": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi. Auteur du texte",
+        "Creator": "ʿABD AL-RAḤMĀN ibn Muḥammad ibn ʿAlī al-Bisṭāmi",
         "Type": "Manuscrit"
     },
     "btv1b10884676k": {
@@ -356,7 +319,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 762",
         "title": "Recueil.",
-        "Date": "14770509",
+        "Date": "1477",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -369,7 +332,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1024",
         "title": "ʿUBAYD ALLĀH IBN MUḤAMMAD AL-FARĠĀNĪ. Commentaire sur le Ġāyat al-quṣwā de ʿAbd Allāh ibn ʿUmar al-Bayḍāwī, acéphale, une longue préface précède le début du Kitāb al-ṭahāra.",
-        "Date": "14040101",
+        "Date": "1404",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -395,7 +358,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 892",
         "title": "ʿABD ALLĀH IBN AḤMAD IBN MAḤMŪD ḤĀFIẒ AL-DĪN AL-NASAFĪ",
-        "Date": "143410",
+        "Date": "1434",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -408,7 +371,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 999",
         "title": "AḤMAD IBN IBRĀHĪM IBN ʿABD AL-RAḤĪM AL-ʿIRĀQĪ ABŪ ZURʿA. al-Bahǧa al-marḍiyya fī šarḥ al-Bahǧa al-warḍiyya (deuxième partie : Bāb al-laqṭa wa-l-laqīṭ — Bāb ʿitq umm al-walad).",
-        "Date": "14550707",
+        "Date": "1455",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -447,7 +410,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 719",
         "title": "AL-ḤUSAYN IBN MASʿŪD AL-FARRĀʾ AL-BAĠAWĪ. Maṣābīḥ al-sunna. Un faux-titre a été inscrit plus récemment.",
-        "Date": "139609",
+        "Date": "1396",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -460,7 +423,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 624",
         "title": "Recueil.",
-        "Date": "1432-1433",
+        "Date": "1432",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -473,7 +436,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1132",
         "title": "SADĪD AL-DĪN AL-KĀŠĠARĪ. Munyat al-Muṣallī wa-ġunyat al-Mubtadiʾ.",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -486,7 +449,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1266",
         "title": "Recueil.",
-        "Date": "1301-1500",
+        "Date": "1301",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -499,7 +462,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 763",
         "title": "AL-ḤUSAYN AL-FATḤĪ AL-ŠĪRĀZĪ. Nuzhat al-nāẓir li-l-sulṭān al-mālik al-Malik al-Ẓāhir.",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -511,8 +474,8 @@
     "btv1b11004319v": {
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 598",
-        "title": "MAḤMŪD IBN ʿUMAR AL-ZAMAḪARĪ ABŪ AL-QĀSIM. al-Kaāfʿ an ḥaqāʾiq al-tanzīl, 2e volume (Coran VII, 1-XVIII, 110).",
-        "Date": "1401-1500",
+        "title": "MAḤMŪD IBN ʿUMAR AL-ZAMAḪARĪ ABŪ AL-QĀSIM. al-Kaāfʿ an ḥaqāiq al-tanzīl, 2e volume (Coran VII, 1-XVIII, 110).",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -525,7 +488,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title":"Yusuf ibn Qawzughli, le fils d'ibn al-Jawzi. Miroir du temps [dans l'histoire des notables]",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -538,7 +501,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Turc 208",
         "title": "Manuel de grammaire.",
-        "Date": "1486-1500",
+        "Date": "1486",
         "Language": [
             "turc ottoman",
             "arabe"
@@ -550,7 +513,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title":"Yusuf ibn Qawzughli, le fils d'ibn al-Jawzi. Miroir du temps [dans l'histoire des notables]",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -563,7 +526,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des manuscrits. Arabe 4304",
         "title": "Le livre des verbes",
-        "Date": "1301-1400",
+        "Date": "1301",
         "Language": [
             "arabe",
             "turc ottoman"
@@ -575,7 +538,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Turc 208",
         "title": "Manuel de grammaire.",
-        "Date": "1486-1500",
+        "Date": "1486",
         "Language": [
             "turc ottoman",
             "arabe"
@@ -587,7 +550,7 @@
         "Digitised by": "Bibliothèque nationale de France",
         "Shelfmark": "Bibliothèque nationale de France. Département des Manuscrits. Arabe 1506",
         "title": "Yusuf bin Quzughli, le fils de bin al-Jawzi Miroir du temps [dans l'histoire des notables].",
-        "Date": "1401-1500",
+        "Date": "1401",
         "Language": [
             "arabe",
             "turc ottoman"
