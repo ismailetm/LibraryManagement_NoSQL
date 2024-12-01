@@ -1,0 +1,42 @@
+db.users.insertMany([
+  {
+    name: "User 1",
+    email: "user1@example.com",
+    password: "password1",
+    address: "Address 1",
+    number: 1234567890,
+    reviewCount: 2
+  },
+  {
+    name: "User 2",
+    email: "user2@example.com",
+    password: "password2",
+    address: "Address 2",
+    number: 9876543210,
+    reviewCount: 1
+  },
+  {
+    name: "User 3",
+    email: "user3@example.com",
+    password: "password3",
+    address: "Address 3",
+    number: 1122334455,
+    reviewCount: 0
+  },
+  {
+    name: "User 4",
+    email: "user4@example.com",
+    password: "password4",
+    address: "Address 4",
+    number: 2233445566,
+    reviewCount: 3
+  },
+  {
+    name: "User 5",
+    email: "user5@example.com",
+    password: "password5",
+    address: "Address 5",
+    number: 3344556677,
+    reviewCount: 5
+  }
+]);
