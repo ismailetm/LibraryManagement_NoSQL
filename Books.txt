@@ -7,7 +7,7 @@ db.books.insertMany([
     publishedYear: 2001,
     availableCopies: 2,
     reviews: [
-      { user: "user1@example.com", comment: "Comment 1", rating: 4 },
+      { user: "user1@example.com", rating: 4 },
       { user: "user2@example.com", comment: "Comment 2", rating: 5 }
     ]
   },
@@ -20,7 +20,7 @@ db.books.insertMany([
     availableCopies: 3,
     reviews: [
       { user: "user3@example.com", comment: "Comment 3", rating: 3 },
-      { user: "user4@example.com", comment: "Comment 4", rating: 4 }
+      { user: "user4@example.com",  rating: 4 }
     ]
   },
   {
@@ -31,7 +31,7 @@ db.books.insertMany([
     publishedYear: 2010,
     availableCopies: 1,
     reviews: [
-      { user: "user5@example.com", comment: "Comment 5", rating: 5 }
+      { user: "user5@example.com",  rating: 5 }
     ]
   },
   {
@@ -54,7 +54,7 @@ db.books.insertMany([
     availableCopies: 5,
     reviews: [
       { user: "user7@example.com", comment: "Comment 7", rating: 5 },
-      { user: "user8@example.com", comment: "Comment 8", rating: 3 }
+      { user: "user8@example.com", rating: 3 }
     ]
   }
 ]);
