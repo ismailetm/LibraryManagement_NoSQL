@@ -529,7 +529,7 @@ app.get("/aggregations", async (req, res) => {
   }
 });
 
-/** 
+
 async function importManuscripts() {
   try {
     // Transformer les données
@@ -552,7 +552,6 @@ async function importManuscripts() {
 // Exécuter l'importation
 importManuscripts();
 
-*/
 
 // Page 404
 app.use((req, res) => {
