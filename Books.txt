@@ -36,25 +36,41 @@ db.books.insertMany([
   },
   {
     title: "Title 4",
-    author: "Author 4",
-    isbn: "4444444444444",
+    author: "Author 2",
+    isbn: "444444444444",
     genre: "Fantasy",
     publishedYear: 2015,
     availableCopies: 4,
     reviews: [
-      { user: "user6@example.com", comment: "Comment 6", rating: 4 }
+      { user: "user4@example.com", rating: 4 }
     ]
+  },
+   {
+    title: "Title 6",
+    author: "Author 2",
+    genre: "Fantasy",
+    publishedYear: 2015,
+    availableCopies: 44,
+    reviews: [
+      { user: "user4@example.com",  rating: 4 }
+    ]
+  },
+    {
+    title: "Title 77",
+    genre: "Fantasy",
+    publishedYear: 2015,
+    availableCopies: 434
   },
   {
     title: "Title 5",
-    author: "Author 5",
+    author: "Author 1",
     isbn: "5555555555555",
     genre: "Fiction",
     publishedYear: 2020,
     availableCopies: 5,
     reviews: [
-      { user: "user7@example.com", comment: "Comment 7", rating: 5 },
-      { user: "user8@example.com", rating: 3 }
+      { user: "user5@example.com", comment: "Comment 7", rating: 5 },
+      { user: "user4@example.com", rating: 3 }
     ]
   }
 ]);
