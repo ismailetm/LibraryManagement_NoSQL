@@ -1,22 +1,26 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Schéma flexible pour un livre
-const bookSchema = new Schema({
-  title: { type: String , required: true},
+
+// Schéma pour les manuscrits
+const bookSchema = new mongoose.Schema({
+  url: { type: String, required: true },// URL comme champ
+  Title: { type: String },
   author: { type: String },
   isbn: { type: String },
-  genre: { type: String , required: true},
+  genre: { type: String },
   publishedYear: { type: Number },
-  availableCopies: { type: Number, default: 1 , required: true},
-  pdfBook: { type: mongoose.Schema.Types.ObjectId, ref: 'fs.files' }, // Référence à GridFS
-  reviews: [ // Tableau d'avis
-    {
-      user: { type: String, required: true },
-      comment: { type: String },
-      rating: { type: Number, min: 1, max: 5, required: true }
-    }
-  ]
+  DigitisedBy: { type: String },
+  availableCopies: { type: Number, default: 0 },
+  pdfBook: { type: mongoose.Schema.Types.ObjectId, ref: 'fs.files' }, 
+  DigitisedBy: String,
+  Shelfmark: String,
+  Date: mongoose.Schema.Types.Mixed, // Accepte soit une chaîne, soit un tableau d'objets
+  Language: [String],
+  Format: String,
+  Creator: String,
+  Type: String,
+  Place: mongoose.Schema.Types.Mixed, // Peut être un objet ou une chaîne
 }, {
   timestamps: true,
   strict: false // Permet l'ajout de champs non définis dans le schéma
